@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>hex color dectector</title>
+<style type="text/css">
+body {text-align:center;
+
+}
+h1 {
+	 font-family:cursive;
+	 background-color:silver;
+}
+input {
+       padding:9px;
+       border: 4px outset ;
+       position:absolute;
+       right:150px;
+       top:140px;
+       border-radius:50px;
+       height:50px;
+       width:60px;
+       background-color:transparent;
+       outline:none;
+       
+}
+button {
+	   
+	   position:absolute;
+	   right:0px;
+	   top:250px;
+	   outline:none;
+	   border-radius:100px;
+	   height:33px;
+	   width:100%;
+	   background-color:silver;
+	   font-variant:small-caps;
+	   font-family:fantasy;
+	   font-weight:900;
+	   
+}
+footer {
+		 font-family:fantasy;
+		 font-size:13px;
+		 text-align:center;
+		 position:absolute;
+		 top:400px;
+		 left:156px;
+		 background-color:silver;
+}
+</style>
+</head>
+
+<body>
+<h1>HEX COLOR GEN</h1>
+        <input type="color" id="color"   />
+        
+        <br>
+        <button onclick="getValue()">get hex</button>
+    <footer>M-soft</footer>    
+<script type="text/javascript">
+var color=document.querySelector('#color');
+color.addEventListener('change',function(){
+var main=color.value;
+document.body.style.background=main;
+
+
+});
+
+
+function getValue() {
+alert(document.getElementById('color').value);
+
+}
+</script>
+</body>
+</html>
